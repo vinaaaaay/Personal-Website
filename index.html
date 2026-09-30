@@ -1,171 +1,86 @@
 <!DOCTYPE html>
 <!--
-  you opened the source. good.
-  never trust the rendered version of anything.
-
-  no framework. no build step. no design system.
-  yes, some of these tags are deprecated. so is obedience.
+  oh, hi. you opened the source.
+  no framework, no build step, no design system. just html, like it's 1996.
+  (yes, <center> is deprecated. it still works. so do I.)
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>vinay</title>
-<meta name="description" content="Vinay. Questions things. Studies maths & computing at IISc. This page is under construction, and so is the author.">
+<meta name="description" content="Vinay. Maths & computing at IISc, research at DREAM:Lab. Quiet at first, then weird.">
 <style>
   /* the entire design. that's it. that's the css. */
-  body { max-width: 44em; margin: 8px; padding: 0 8px 40px; line-height: 1.35; background: #fff; color: #000; }
+  body { max-width: 44em; margin: 8px; padding: 0 8px 40px; line-height: 1.4; background: #fff; color: #000; }
   img { max-width: 100%; }
-  pre { white-space: pre-wrap; word-break: break-all; }
-  table { border-collapse: collapse; }
-  td, th { padding: 4px 8px; vertical-align: top; text-align: left; }
-  .backwards { unicode-bidi: bidi-override; direction: rtl; text-align: left; display: inline-block; }
-  .honest { color: #fff; }
-  #me { float: right; margin: 0 0 8px 12px; cursor: pointer; image-rendering: pixelated; }
+  li { margin-bottom: 6px; }
+  #me { float: right; margin: 0 0 8px 12px; image-rendering: pixelated; }
   @media (max-width: 480px) { #me { float: none; margin: 0 0 8px; } }
-
-  /* the lamp */
-  #dark { position: fixed; inset: 0; pointer-events: none; z-index: 9; display: none;
-          background: radial-gradient(circle at var(--x, 50%) var(--y, 40%), transparent 0 80px, #000 140px); }
-  body.lamp #dark { display: block; }
-  body.lamp .honest { color: #000; }
-  #putdown { position: fixed; top: 8px; right: 8px; z-index: 10; color: #fff; display: none; }
-  body.lamp #putdown { display: block; }
 </style>
 </head>
 <body>
 
-<p><small>if you're looking for the menu, it's at the bottom. ask yourself why you expected it up here.</small></p>
+<p><small>the menu is at the bottom. it's quieter down there.</small></p>
 
 <h1>vinay</h1>
 
-<p>I question things. That's most of it.</p>
+<p>Hi. I study maths and computing at IISc Bangalore, do research at DREAM:Lab,
+and argue with ideas for fun.</p>
 
 <hr>
 
 <h2 id="who">who</h2>
 
-<img id="me" src="portrait-1bit.png" width="260" height="283" alt="a 1-bit picture of me in sunglasses. click it for the real one." title="click me">
+<img id="me" src="portrait-1bit.png" width="260" height="283" alt="a two-colour picture of me in sunglasses">
 
-<p>My name is Vinay. I study mathematics and computing at IISc, Bangalore,
-and I do research at DREAM:Lab.</p>
+<p>I'm quiet when you first meet me. Give it a while. It gets weirder.</p>
 
-<p>I question things. Mostly rules, sometimes people, occasionally myself.
-The last one is the hardest.</p>
+<p>I like doing things my own way. Not to be difficult, I just want to know
+what happens if I don't do it the usual way.</p>
 
-<p>I like art, philosophy, and doing things I'm fairly sure I can't do.</p>
+<p>I argue with ideas, not people. If you tell me something is obvious,
+I'll probably take the other side, just to see if it holds up.</p>
 
-<p>People call me weird. I checked. They're right.</p>
+<p><small>(the photo has two colours. here's <a href="portrait.jpg">the one with all of them</a>.)</small></p>
 
 <br clear="all">
 
 <hr>
 
-<h2 id="rules">rules I didn't sign</h2>
-
-<p>Somebody wrote these down once. Everybody else just forgot to ask why.</p>
-
-<ol>
-  <li><s>A website should look professional.</s><br>
-      <font color="red">You're looking at it.</font></li>
-  <li><s>The menu goes at the top.</s><br>
-      <font color="red">It's at the bottom. You'll live.</font></li>
-  <li><s>First impressions matter, so use your best photo.</s><br>
-      <font color="red">The photo above has two colours. Click it if you really need more.</font></li>
-  <li><s>Be realistic about what you can do.</s><br>
-      <font color="red">I was realistic once. Then I <a href="#hard">cycled 124 km</a>.</font></li>
-  <li><s>Pick one thing and be that.</s><br>
-      <font color="red">Maths, machines, art, philosophy. No.</font></li>
-  <li><s>Respect your elders' opinions.</s><br>
-      <font color="red">I respect them enough to argue with them.</font></li>
-  <li><s>Be easy to read.</s><br>
-      <font color="red"><span class="backwards">.ti daer uoy tub ,sdrawkcab si ecnetnes sihT</span></font></li>
-  <li><s>A human is a featherless biped.</s> (Plato)<br>
-      <font color="red">See <a href="#diogenes">the chicken</a>.</font></li>
-</ol>
-
-<hr>
-
-<h2 id="hard">things I was sure I couldn't do</h2>
-
-<table border="1">
-  <tr><th>the thing</th><th>what I thought beforehand</th><th>what happened</th></tr>
-  <tr><td>124 km on a bicycle</td><td>no.</td><td>done.</td></tr>
-  <tr><td>20 km, running</td><td>absolutely not.</td><td>done.</td></tr>
-  <tr><td>a soul-crushing lab research paper</td><td>it will crush me.</td><td>it did. I got through it anyway.</td></tr>
-</table>
-
-<p>Here is the 124 km, one <code>#</code> per kilometre:</p>
-
-<pre id="km"></pre>
-
-<p>Every one of those is a moment where stopping made more sense than continuing.</p>
-
-<p><s>Know your limits.</s> <font color="red">Test them. Your limits are guesses, and most guesses are wrong.</font></p>
-
-<hr>
-
-<h2 id="diogenes">my patron saint</h2>
-
-<p><b>Diogenes of Sinope</b>, roughly 404&ndash;323 BC. He lived in a big clay jar in
-the Athens marketplace, owned almost nothing, and treated every custom
-as a question nobody had bothered to ask.</p>
+<h2 id="could">things I did to see if I could</h2>
 
 <ul>
-  <li>Plato defined a human as &ldquo;a featherless biped.&rdquo; Diogenes plucked a chicken,
-      brought it to Plato's school and said: <i>&ldquo;Here is Plato's human.&rdquo;</i>
-      Plato quietly added &ldquo;with broad flat nails&rdquo; to the definition.</li>
-  <li>He walked around in broad daylight carrying a lit lamp. Asked why,
-      he said he was looking for a human being. (Later retellings made it
-      &ldquo;an honest man.&rdquo;)</li>
-  <li>Alexander the Great, the most powerful man alive, came to see him and
-      offered him anything he wanted. Diogenes asked him to stand a little
-      out of his sunlight.</li>
-  <li>Asked where he was from, he said: <i>&ldquo;I am a citizen of the world.&rdquo;</i></li>
-  <li>His motto came from an oracle: <b>deface the currency.</b> Take the stamp
-      society puts on things, and check whether the thing underneath is real.</li>
+  <li>Cycled 124 km. I was fairly sure I couldn't. Turns out I could.</li>
+  <li>Ran 20 km. Same experiment, fewer wheels.</li>
+  <li>Got through a lab research paper that nearly flattened me. Different muscles, same idea.</li>
+  <li>Decided one day to learn Rust. No particular reason. That's usually the best kind.</li>
 </ul>
 
-<p>All of this is from Diogenes La&euml;rtius, <i>Lives of Eminent Philosophers</i>, Book VI.
-Some of it is probably exaggerated. I like it more for that.</p>
-
-<p>There's a sentence right below this one that you can't see in daylight.
-<a href="#" id="lamp">Carry the lamp &rarr;</a></p>
-
-<p class="honest">Still looking for an honest human. I'm checking myself first.</p>
+<p>None of these were for a medal. I just wanted to know.</p>
 
 <hr>
 
-<h2 id="why">the why machine</h2>
+<h2 id="like">things I like</h2>
 
-<p>Press the button. Keep pressing it. This is what the inside of my head sounds like.</p>
-
-<div id="whys"><p>&gt; I do things I think I can't do.</p></div>
-
-<form onsubmit="return false"><input type="button" id="whybtn" value="why?"></form>
-
-<hr>
-
-<h2 id="questions">frequently asked questions (by me, to you)</h2>
-
-<dl>
-  <dt><b>Who told you what you can't do?</b></dt>
-  <dd>Did you check, or did you just believe them?</dd>
-  <dt><b>Which of your opinions did you choose, and which did you inherit?</b></dt>
-  <dd>Try to name one of each.</dd>
-  <dt><b>When did you last do something for no reason?</b></dt>
-  <dd>Not for a CV. Not for a photo. For nothing.</dd>
-  <dt><b>Is a website with no design still designed?</b></dt>
-  <dd>I spent a long time making this look like I didn't.</dd>
-  <dt><b>Why did you scroll this far?</b></dt>
-  <dd>No wrong answers. Maybe no right ones either.</dd>
-</dl>
+<ul>
+  <li><b>Music, paintings, films.</b> I don't make art. I'm a very committed audience.</li>
+  <li><b>Philosophy</b>, most of it: why we live, what a mind is, how to live well,
+      how we know anything at all. I don't have answers. I'd be suspicious of anyone who did.</li>
+  <li><b>Maths.</b> Some days I love it. Some days I hate it. Both feel like part of the deal.</li>
+  <li><b>Short GoPro clips</b> of whatever I'm doing. Nobody asked for them. I make them anyway.</li>
+</ul>
 
 <hr>
 
-<h2 id="work">things I built</h2>
+<h2 id="work">what I'm working on</h2>
 
-<p>When nobody's asking, I build machines that think a bit.</p>
+<p>At DREAM:Lab we're working on <b>durable execution of dynamic agents</b>.
+AI agents that decide their next step as they go are great, right up until
+something crashes halfway through. We want them to pick up where they left off
+instead of starting over.</p>
+
+<p>Things I've built on the side:</p>
 
 <ul>
   <li><a href="https://github.com/vinaaaaay/MLauto">MLauto</a> &mdash;
@@ -184,43 +99,37 @@ Some of it is probably exaggerated. I like it more for that.</p>
       turns any virtual machine into a sandbox that speaks MCP.</li>
 </ul>
 
-<p>The rest is on <a href="https://github.com/vinaaaaay">GitHub</a>.</p>
+<p>The rest lives on <a href="https://github.com/vinaaaaay">GitHub</a>.</p>
 
 <hr>
 
-<h2 id="exhibit">an exhibit</h2>
+<h2 id="talk">talk to me</h2>
 
-<hr>
+<p>If something on this page made you want to disagree with me, that's a good
+reason to write. So is anything on this list, which I'll happily talk about for too long:</p>
 
-<p><i>Untitled (Horizontal Rule)</i>, 2026.<br>
-&lt;hr&gt; on screen. Dimensions: the width of your window.</p>
+<ul>
+  <li>whether machines can actually think</li>
+  <li>whether maths is invented or discovered (I switch sides depending on the day)</li>
+  <li>what makes a painting, a song or a film stay with you</li>
+  <li>something hard you did just to see if you could</li>
+  <li>why you think I'm wrong</li>
+</ul>
 
-<p>It's art because I put it here and called it art. If that annoys you,
-ask yourself how many things you accepted as art because someone hung
-them in a museum.</p>
+<p>Email: <a href="mailto:karmanvinay@gmail.com">karmanvinay@gmail.com</a><br>
+Also: <a href="https://github.com/vinaaaaay">GitHub</a> &middot;
+<a href="https://www.linkedin.com/in/vinaaaay/">LinkedIn</a></p>
 
-<hr>
-
-<h2 id="contact">contact</h2>
-
-<p>Email: <a href="mailto:karmanvinay@gmail.com">karmanvinay@gmail.com</a>. Best used for disagreeing with me.<br>
-Also: <a href="https://github.com/vinaaaaay">GitHub</a>, <a href="https://www.linkedin.com/in/vinaaaay/">LinkedIn</a>
-(the most rule-following place on the internet. I have an account anyway.)</p>
-
-<p>Guestbook: email me. I'll read every entry. I won't publish any of them.</p>
+<p>Guestbook: email me. I read every entry. I publish none of them.</p>
 
 <hr>
 
 <p><b>menu</b> (told you):
 <a href="#who">who</a> |
-<a href="#rules">rules</a> |
-<a href="#hard">hard things</a> |
-<a href="#diogenes">Diogenes</a> |
-<a href="#why">why?</a> |
-<a href="#questions">questions</a> |
+<a href="#could">things I did</a> |
+<a href="#like">things I like</a> |
 <a href="#work">work</a> |
-<a href="#exhibit">exhibit</a> |
-<a href="#contact">contact</a></p>
+<a href="#talk">talk to me</a></p>
 
 <hr>
 
@@ -228,75 +137,15 @@ Also: <a href="https://github.com/vinaaaaay">GitHub</a>, <a href="https://www.li
   <p>[ <a href="#top" title="there is no previous">&larr; prev</a> |
        <a href="#top" title="there is only one">random</a> |
        <a href="#top" title="there is no next">next &rarr;</a> ]<br>
-     <small>the cynic webring &middot; members: 1</small></p>
+     <small>the vinay webring &middot; members: 1</small></p>
 
   <p><small>this page is under construction. so is the author.<br>
   you are visitor number 1. so is everyone.<br>
-  best viewed with an open mind, at any resolution.<br>
+  best viewed at any resolution, preferably on a slow afternoon.<br>
   last modified: <span id="mod">recently</span></small></p>
 </center>
 
-<a href="#" id="putdown">put the lamp down (esc)</a>
-<div id="dark"></div>
-
 <script>
-  // 124 kilometres
-  var km = "";
-  for (var i = 1; i <= 124; i++) km += (i % 10 === 0) ? "#" + i + " " : "#";
-  document.getElementById("km").textContent = km;
-
-  // the real photo, if you insist
-  var me = document.getElementById("me"), real = false;
-  me.onclick = function () {
-    real = !real;
-    me.src = real ? "portrait.jpg" : "portrait-1bit.png";
-    me.style.imageRendering = real ? "auto" : "pixelated";
-    me.title = real ? "fine. happy?" : "click me";
-  };
-
-  // the why machine
-  var answers = [
-    "Because “I can't” is usually a rule someone else wrote, and I forgot to check it.",
-    "Because most rules are just old decisions that nobody bothered to question.",
-    "Because questioning takes effort, and agreeing is free.",
-    "Because comfortable is the default setting, and I don't trust defaults.",
-    "Because a default is just a choice somebody made for you before you arrived.",
-    "I don't know.",
-    "Good. That's the first completely honest answer on this page."
-  ];
-  var n = 0, whys = document.getElementById("whys"), btn = document.getElementById("whybtn");
-  btn.onclick = function () {
-    if (n >= answers.length) {
-      whys.innerHTML = "<p>&gt; I do things I think I can't do.</p>";
-      n = 0; btn.value = "why?"; return;
-    }
-    var q = document.createElement("p"); q.innerHTML = "<i>why?</i>";
-    var a = document.createElement("p"); a.textContent = "> " + answers[n++];
-    whys.appendChild(q); whys.appendChild(a);
-    if (n >= answers.length) btn.value = "start over (you'll get the same answers. question that too.)";
-  };
-
-  // the lamp
-  var body = document.body, dark = document.getElementById("dark");
-  function lamp(on) { body.classList.toggle("lamp", on); }
-  document.getElementById("lamp").onclick = function (e) {
-    e.preventDefault(); lamp(true);
-    var r = e.target.getBoundingClientRect();
-    dark.style.setProperty("--x", r.left + 60 + "px");
-    dark.style.setProperty("--y", r.bottom + 30 + "px");
-  };
-  document.getElementById("putdown").onclick = function (e) { e.preventDefault(); lamp(false); };
-  addEventListener("keydown", function (e) { if (e.key === "Escape") lamp(false); });
-  addEventListener("pointermove", function (e) {
-    dark.style.setProperty("--x", e.clientX + "px");
-    dark.style.setProperty("--y", e.clientY + "px");
-  }, { passive: true });
-
-  // leave, and the page notices
-  document.addEventListener("visibilitychange", function () {
-    document.title = document.hidden ? "you left. why?" : "vinay";
-  });
-
   // 1996 had this. so do we.
   var d = new Date(document.lastModified);
   if (!isNaN(d)) document.getElementById("mod").textContent = d.toDateString().toLowerCase();
